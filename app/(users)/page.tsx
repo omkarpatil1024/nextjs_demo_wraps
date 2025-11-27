@@ -1,3 +1,4 @@
+'use client';
 import Card from "@/components/Card";
 import Image from "next/image";
 import offer from "../../public/OfferBiz.png";
@@ -33,7 +34,6 @@ export default function Home() {
 
   const handleLearnMore = (id: number) => {
     console.log(`Learn more clicked for card ${id}`);
-    // Add your navigation or other logic here
   };
   return (
    <main>

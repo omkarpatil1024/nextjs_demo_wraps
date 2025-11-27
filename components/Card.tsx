@@ -1,4 +1,4 @@
-// components/Card.tsx
+// 'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -39,16 +39,16 @@ const Card: React.FC<CardProps> = ({
           {description}
         </p>
       </div>
-      {/* {buttonText && (
+      {buttonText && (
         <div className="px-6 pt-4 pb-2">
           <button 
-            // onClick={onButtonClick}
+            onClick={onButtonClick}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
             {buttonText}
           </button>
         </div>
-      )} */}
+      )}
     </div>
   );
 };
