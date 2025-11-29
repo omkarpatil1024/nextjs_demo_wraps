@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-
+import {notFound} from "next/navigation";
 export const metadata: Metadata = {
   title: 'Service Page',
   description: 'Welcome to my Next.js application!',
@@ -32,6 +32,11 @@ export const metadata: Metadata = {
 }
 
 export default function Service() {
+  let omkar = true;
+  if(omkar){
+    notFound();
+  }
+
   return (
     <>
       <h3>Service Page</h3>
